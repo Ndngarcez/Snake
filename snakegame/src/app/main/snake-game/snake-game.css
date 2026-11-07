@@ -17,3 +17,10 @@
     border: 1px solid black ;
     
 }
+
+.comida {
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  border: 1px solid black;
+}

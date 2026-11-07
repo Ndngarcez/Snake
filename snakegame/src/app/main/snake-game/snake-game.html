@@ -11,18 +11,22 @@
 
 <!-- area do jogo -->
 
+<!-- Área do jogo -->
 <div class="tabuleiro">
-  @for (celula of celulas; track celula) {
-    <div class="celula"></div>
-  }
-</div>
 
-<div class="tabuleiro">
   @for (celula of celulas; track celula) {
-    @if (celula ===posicao_da_cobra) {
-      <div class="cobra"></div>
+  
+    @if (cobra.includes(celula)) {
+    <div class="cobra"></div>
+  
+
+    } @else if (celula === comida) {
+      <div class="comida"></div>
     } @else {
       <div class="celula"></div>
     }
+
   }
+
+
 </div>
