@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+import { SnakeGame } from './snake-game/snake-game';
 
 @Component({
-  imports: [],
+  imports: [SnakeGame],
   selector: 'app-main',
   styleUrl: './main.css',
   templateUrl: './main.html',

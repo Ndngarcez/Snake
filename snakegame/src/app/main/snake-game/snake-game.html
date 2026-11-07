@@ -1,1 +1,28 @@
 <p>snake-game works!</p>
+<p>Pontuação {{ pontos }}</p>
+
+<!-- botao visual -->
+
+<button (click)="aumentarPontos()">Aumentar pontos</button>
+<button (click)="moverDireita()">direita</button>
+<button (click)="moveresquerda()">esquerda</button>
+<button (click)="movercima()">cima</button>
+<button (click)="moverbaixo()">baixo</button>
+
+<!-- area do jogo -->
+
+<div class="tabuleiro">
+  @for (celula of celulas; track celula) {
+    <div class="celula"></div>
+  }
+</div>
+
+<div class="tabuleiro">
+  @for (celula of celulas; track celula) {
+    @if (celula ===posicao_da_cobra) {
+      <div class="cobra"></div>
+    } @else {
+      <div class="celula"></div>
+    }
+  }
+</div>

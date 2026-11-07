@@ -1,8 +1,10 @@
+import { Main } from './main/main';
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { SnakeGame } from './main/snake-game/snake-game';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [Main, SnakeGame],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

@@ -1,0 +1,19 @@
+.celula {
+  width: 25px;
+  height: 25px;
+  background-color: green;
+  border: 1px solid black;
+}
+
+.tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(10, 25px);
+}
+
+.cobra{
+    width: 25;
+    height: 25;
+    background-color: brown;
+    border: 1px solid black ;
+    
+}
